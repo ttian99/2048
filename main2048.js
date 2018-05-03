@@ -140,29 +140,29 @@ $(document).keydown(function (event) {
         case 37: // left
             event.preventDefault(); // 屏蔽默认的按键功能
             if (moveLeft()) {
-                setTimeout("generateOneNumber()", 210);
-                setTimeout("isgameover()", 300);
+                setTimeout("generateOneNumber()", 110);
+                setTimeout("isgameover()", 205);
             }
             break;
         case 38: // up
             event.preventDefault(); // 屏蔽默认的按键功能
             if (moveUp()) {
-                setTimeout("generateOneNumber()", 210);
-                setTimeout("isgameover()", 300);
+                setTimeout("generateOneNumber()", 110);
+                setTimeout("isgameover()", 205);
             }
             break;
         case 39: // right
             event.preventDefault(); // 屏蔽默认的按键功能
             if (moveRight()) {
-                setTimeout("generateOneNumber()", 210);
-                setTimeout("isgameover()", 300);
+                setTimeout("generateOneNumber()", 110);
+                setTimeout("isgameover()", 205);
             }
             break;
         case 40: // down
             event.preventDefault(); // 屏蔽默认的按键功能
             if (moveDown()) {
-                setTimeout("generateOneNumber()", 210);
-                setTimeout("isgameover()", 300);
+                setTimeout("generateOneNumber()", 110);
+                setTimeout("isgameover()", 205);
             }
             break;
         default: // default
@@ -190,7 +190,7 @@ document.addEventListener('touchend', function (event) {
 function checkLocation() {
     var delx = endx - startx;
     var dely = endy - starty;
-    if (Math.abs(delx) < (0.3 * documentWidth) && Math.abs(dely) < (0.3 * documentWidth)) {
+    if (Math.abs(delx) < (0.1 * documentWidth) && Math.abs(dely) < (0.1 * documentWidth)) {
         return;
     }
     // x
@@ -198,14 +198,14 @@ function checkLocation() {
         if (delx > 0) {
             // move right
             if (moveRight()) {
-                setTimeout("generateOneNumber()", 210);
-                setTimeout("isgameover()", 300);
+                setTimeout("generateOneNumber()", 110);
+                setTimeout("isgameover()", 205);
             }
         } else {
             // move left
             if (moveLeft()) {
-                setTimeout("generateOneNumber()", 210);
-                setTimeout("isgameover()", 300);
+                setTimeout("generateOneNumber()", 110);
+                setTimeout("isgameover()", 205);
             }
         }
     }
@@ -214,14 +214,14 @@ function checkLocation() {
         if (dely > 0) {
             // move down
             if (moveDown()) {
-                setTimeout("generateOneNumber()", 210);
-                setTimeout("isgameover()", 300);
+                setTimeout("generateOneNumber()", 110);
+                setTimeout("isgameover()", 205);
             }
         } else {
             // move up
             if (moveUp()) {
-                setTimeout("generateOneNumber()", 210);
-                setTimeout("isgameover()", 300);
+                setTimeout("generateOneNumber()", 110);
+                setTimeout("isgameover()", 205);
             }
         }
     }
@@ -274,7 +274,7 @@ function moveLeft() {
         }
     }
 
-    setTimeout("updateBoardView()", 200);
+    setTimeout("updateBoardView()", 101);
     return true;
 }
 
@@ -306,7 +306,7 @@ function moveRight() {
             }
         }
     }
-    setTimeout("updateBoardView()", 200);
+    setTimeout("updateBoardView()", 101);
     return true;
 }
 
@@ -337,7 +337,7 @@ function moveUp() {
             }
         }
     }
-    setTimeout("updateBoardView()", 200);
+    setTimeout("updateBoardView()", 101);
     return true;
 }
 
@@ -368,6 +368,6 @@ function moveDown() {
             }
         }
     }
-    setTimeout("updateBoardView()", 200);
+    setTimeout("updateBoardView()", 101);
     return true;
 }
