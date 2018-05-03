@@ -2,4 +2,4 @@
 a game for 2048
 
 ##
-[慕课网视频地址](https://www.imooc.com/video/1029);
+[慕课网视频地址](https://www.imooc.com/learn/76);
